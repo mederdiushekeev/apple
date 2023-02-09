@@ -27,25 +27,24 @@ nav .navbar__list {
 }
 
 header {
-  padding-top: 50px;
-  height: 725px;
   background-color: #000000;
 }
 
 header .header__iphone_black {
-  height: 725px;
+  padding-top: 50px;
+  height: 563px;
   width: 40%;
   margin: auto;
   text-align: center;
   color: #eeeeee;
 }
 
-header .header__iphone_black h2 {
+.header__iphone_title {
   font-size: 56px;
   font-weight: 600;
 }
 
-header .header__iphone_black h3 {
+.header__iphone_descr {
   font-size: 26px;
   font-weight: 600;
   padding-bottom: 15px;
@@ -55,7 +54,7 @@ header .header__iphone_black h3 {
 header .header__iphone_black img {
   position: absolute;
   left: 35%;
-  bottom: 7px;
+  bottom: 170px;
   width: 30%;
 }
 
@@ -65,7 +64,20 @@ header .header__iphone_black .header__links {
   width: 271px;
   margin: auto;
   color: #2997ff;
-  font-size: 20px;
+  font-size: 18px;
+  position: absolute;
+  left: 41%;
+  z-index: 1;
+}
+
+.header__links__1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header__links__2:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* .header__links__parag::after {
@@ -73,69 +85,70 @@ header .header__iphone_black .header__links {
 } */
 
 .header__iphone_white {
-  height: 750px;
+  padding-top: 30px;
+  margin: auto;
+  height: 585px;
   background-color: #fbfbfd;
   width: 40%;
-  margin: auto;
   text-align: center;
 }
 
-header .header__iphone_white h2 {
-  font-size: 56px;
-  font-weight: 600;
-}
+/* .header__iphone_white .header__links .header__links__1::after {
+  content: url(./assets/Vector.png);
+  display: inline;
+  width: 20%;
+} */
 
-header .header__iphone_white h3 {
-  font-size: 26px;
-  font-weight: 400;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
-
-header .header__iphone_white img {
-  position: absolute;
-  left: 33%;
-  top: 133%;
-}
-
-header .header__iphone_white .header__links {
+.header__iphone_white .header__links {
   display: flex;
-  justify-content: space-evenly;
-  width: 271px;
   margin: auto;
+  width: 188px;
+  justify-content: space-between;
   color: #2997ff;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.header__airpods {
-  padding-top: 50px;
-  height: 726px;
+.header__iphone_white img {
+  width: 65%;
+}
+
+.header__homepod {
+  position: relative;
+  padding-top: 30px;
+  height: 598px;
   background-color: black;
   color: #fbfbfd;
   margin: auto;
   text-align: center;
 }
 
-.header__airpods h2 {
+.header__homepod h2 {
   font-size: 56px;
   font-weight: 600;
 }
 
-.header__airpods h3 {
+.header__homepod h3 {
   font-size: 26px;
   font-weight: 400;
   padding-bottom: 15px;
   padding-top: 10px;
 }
 
-.header__airpods img {
-  width: 30%;
+.header__homepod img {
+  width: 95%;
+  left: 39px;
+  z-index: 0;
+  bottom: 28%;
+  position: absolute;
 }
 
-header .header__airpods .header__links {
+.header__homepod .header__links {
+  position: absolute;
+  z-index: 1;
+  left: 41%;
   display: flex;
   justify-content: space-evenly;
-  width: 271px;
+  width: 269px;
   margin: auto;
   color: #2997ff;
   font-size: 20px;
